@@ -3,15 +3,20 @@
 	"auto_update_pr": {
 		"triggers": [
 			{
-				"label": "automerge"
+				"label": "auto-pr-update"
 			}
 		]
 	},
 	"auto_label_pr": {
-		"automerge": {
+		"auto-pr-update": {
 			"auto_add": "on_pr_creation",
 			"create_label_if_missing_in_repo": true,
 			"color": "00ff00"
+		},
+		"auto-pr-merge": {
+			"auto_merge": true,
+			"create_label_if_missing_in_repo": true,
+			"color": "0075ca"
 		}
 	}
 }
