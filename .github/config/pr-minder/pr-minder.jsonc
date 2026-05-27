@@ -1,20 +1,14 @@
 {
 	"$schema": "https://raw.githubusercontent.com/wow-look-at-my/pr-minder/master/schema/pr-minder.schema.json",
-	"auto_update_pr": {
-		"triggers": [
-			{
-				"label": "auto-pr-update"
-			}
-		]
-	},
 	"auto_label_pr": {
 		"auto-pr-update": {
+			"mode": "auto_update",
 			"auto_add": "on_pr_creation",
 			"create_label_if_missing_in_repo": true,
 			"color": "00ff00"
 		},
 		"auto-pr-merge": {
-			"auto_merge": true,
+			"mode": "auto_merge",
 			"create_label_if_missing_in_repo": true,
 			"color": "0075ca"
 		}
